@@ -45,7 +45,7 @@ def find_patient_files(data_folder):
         filenames = sorted(filenames, key=lambda f: int(os.path.splitext(os.path.basename(f))[0]))
 
     return filenames
-# Load Challenge outputs.
+
 # Load Challenge outputs.
 def load_challenge_outputs(filename):
     with open(filename, 'r') as f:
@@ -147,7 +147,6 @@ def sanitize_scalar_value(x):
     return float(x) if is_finite_number(x) else 0.0
 
 # Save Challenge outputs.
-# Save Challenge outputs (Only "Present" and "Absent" with Correct Formatting)
 def save_challenge_outputs(filename, patient_id, classes, labels, probabilities):
     patient_string = f'#{patient_id}'
 

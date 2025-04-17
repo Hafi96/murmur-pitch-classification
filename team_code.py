@@ -69,7 +69,7 @@ def train_challenge_model(data_folder, model_folder, verbose):
             print('\n')
         save_challenge_model(model_folder, pitch_classifier, file_name='pitch_classifier')
         
-    # Stage 2: Train the classifier for Outcome classification
+    
  
         
     if verbose:
@@ -144,7 +144,7 @@ def recording_pitch_diagnose(multi_scale_specs, pitch_classifier, systolic_murmu
 
 @torch.no_grad()
 def run_challenge_model(model, data, recordings, verbose):
-    (device, preprocessor, pitch_classifier, systolic_murmur_class) = model  # Removed outcome-related components
+    (device, preprocessor, pitch_classifier, systolic_murmur_class) = model  
     interval = 1.0
     recording_pitch_counts = np.zeros(len(systolic_murmur_class), dtype=np.int_)
 

@@ -113,7 +113,7 @@ class Hierachical_MS_Net(nn.Module):
                 stagewise_layers: List[int] = [2, 2, 2, 2],
                 scalewise_inplanes: List[int] = [32, 16, 16],
                 include_patient_data: bool = False,
-                num_classes: int = 2,  # Updated to exclude "Unknown"
+                num_classes: int = 3,  
                 zero_init_residual: bool = True,
                 ):
         super().__init__()

@@ -1,0 +1,10 @@
+#Pitch scores
+AUROC,AUPRC,F-measure,Accuracy,Weighted Accuracy
+0.723,0.541,0.568,0.815,0.851
+
+#Pitch scores (per class)
+Classes,Low,Medium,High
+AUROC,0.861,0.531,0.777
+AUPRC,0.792,0.300,0.530
+F-measure,0.872,0.167,0.667
+Accuracy,0.861,0.722,0.861

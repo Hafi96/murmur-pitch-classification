@@ -6,7 +6,7 @@ DATALOADER_CFG = {
 
 DATASET_CFG = {
     'num_systolic_murmur_class': 3,
-    # 'num_outcome_classes': 2, 
+     
     'systolic_murmur_class': ["Low","Medium","High"],
 
 }

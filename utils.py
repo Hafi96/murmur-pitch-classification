@@ -4,7 +4,7 @@ import torch
 from helper_code import find_patient_files, load_patient_data, get_num_locations, get_locations, get_pitch, load_wav_file
 from helper_code import compare_strings, get_age, get_sex, get_height, get_weight, get_pregnancy_status
 
-# Updated mappings to remove "Unknown" and outcome-related labels
+
 pitch_mapping_str2int = {'Low': 0, 'Medium': 1,'High': 2}
 pitch_mapping_int2str = {0: 'Low', 1: 'Medium',2: 'High'}
 
